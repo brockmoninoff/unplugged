@@ -114,7 +114,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
   margin: 0;
 }
 
@@ -122,6 +121,20 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a.unplugged-logo {
+  width: 60%;
+}
+
+header img {
+  width: 100%;
 }
 
 header nav {
@@ -142,7 +155,7 @@ header nav ul {
 /* -------------------- Footer Styles -------------------- */
 
 footer {
-  flex-dirction: column;
+
 }
 
 footer p {
@@ -154,12 +167,16 @@ footer h4 {
 }
 
 footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
+  /* width: 55%; */
+  /* margin: 50px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .footer-content {
-
+  /* width: 100%; */
+  width: 55%;
 }
 
 footer .contact {
@@ -189,6 +206,8 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -217,15 +236,22 @@ aside {
 }
 
 .form-description {
-  padding: 30px 0 10px 0;
+  padding: 10px 0 10px 0;
 }
 
 .form {
   padding: 10px 0 52px 0;
+  width: 100%;
 }
 
 .form [value="email address"] {
   padding: 18px 0;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.form [value="Download Itinerary"] {
+  width: 100%;
 }
 /* Features */
 
@@ -353,10 +379,11 @@ aside {
 
 .faq h2 {
   margin-bottom: 40px;
+  width: 100%
 }
 
 .faq-content {
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
@@ -447,15 +474,127 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+/* Tablet styles here */
+  .content-wrapper {
+    width: 85%;
+  }
+
+  /* ---------- Tablet Header Styles ---------- */
+
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  header .header-divider {
+    display: none;
+  }
+
+  header a.unplugged-logo {
+    width: 33%;
+  }
+
+  header nav {
+    width: 33%;
+  }
+
+  /* ---------- Tablet Homepage Styles ---------- */
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .form-description,
+  .form {
+    width: 45%
+  }
+
+  .features .features-items {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .features article {
+    flex-basis: 34%;
+    /* width: 34%; */
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .reviews-img,
+  .reviews-content {
+    width: 48%;
+  }
+
+  .reviews h3 {
+    margin-top: 0;
+  }
+
+  /* ---------- Tablet Footer Styles ---------- */
+
+  footer .content-wrapper {
+    width: 85%
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%
+  }
+
+  footer .contact,
+  footer .social {
+    width: 50%;
+  }
+
+  /* ---------- Tablet FAQ Styles ---------- */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  /* ---------- Tablet About Styles ---------- */
+
+  .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .mission-content p {
+        width: 40%;
+    }
+
+    .contact-section .content-wrapper h2 {
+        width: 100%;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+/* Desktop styles here */
+
 }
 
 /* ==========================================================================
