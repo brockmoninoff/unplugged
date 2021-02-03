@@ -167,15 +167,12 @@ footer h4 {
 }
 
 footer .content-wrapper {
-  /* width: 55%; */
-  /* margin: 50px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .footer-content {
-  /* width: 100%; */
   width: 55%;
 }
 
@@ -518,7 +515,6 @@ aside {
 
   .features article {
     flex-basis: 34%;
-    /* width: 34%; */
   }
 
   .reviews article {
@@ -538,10 +534,6 @@ aside {
   }
 
   /* ---------- Tablet Footer Styles ---------- */
-
-  footer .content-wrapper {
-    width: 85%
-  }
 
   footer .footer-content {
     display: flex;
@@ -587,13 +579,39 @@ aside {
     .contact-content {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start; 
+        align-items: flex-start;
+    }
+
+    .contact-section .general-into,
+    .contact-section .chat {
+      width: 40%;
     }
 
 }
 
 @media only screen and (min-width: 1200px) {
 /* Desktop styles here */
+
+    .content-wrapper {
+      width: 80%;
+    }
+
+/* ---------- Desktop Homepage Styles ---------- */
+
+    .features article {
+      flex-basis: 26%;
+    }
+
+/* ---------- Desktop About Styles ---------- */
+
+  .mission-content p {
+    width: 46%;
+  }
+
+  .contact-section .general-info,
+  .contact-section .chat {
+    width: 46%;
+  }
 
 }
 
