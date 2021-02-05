@@ -89,6 +89,60 @@ textarea {
    ==========================================================================
    ========================================================================== */
 
+   /* General Styles */
+
+   html {
+     font-size: 16px;
+   }
+
+   body {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1em;
+     text-align: left;
+   }
+
+   ul,
+   ol {
+     list-style-type: none;
+   }
+
+   a {
+     color: #e2e3ed;
+     text-decoration: none;
+   }
+
+   h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+    line-height: 1.2;
+    font-weight: 400;
+   }
+
+   h3,
+   h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.125em;
+     font-weight: 400;
+     margin: 20px 0;
+   }
+
+   p {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 0.875em;
+   }
+
+   img {
+
+   }
+
+   figure {
+
+   }
+
+   address {
+     font-style: normal;
+   }
+
    .content-wrapper {
      width: 90%;
      margin: 50px 0;
@@ -241,15 +295,6 @@ aside {
   width: 100%;
 }
 
-.form [value="email address"] {
-  padding: 18px 0;
-  width: 100%;
-  margin-bottom: 18px;
-}
-
-.form [value="Download Itinerary"] {
-  width: 100%;
-}
 /* Features */
 
 .features {
@@ -383,6 +428,33 @@ aside {
   margin-bottom: 50px;
 }
 
+/* ---------- Form Styles ---------- */
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
