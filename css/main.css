@@ -317,8 +317,8 @@ footer .copyright {
   background-size: cover;
 }
 
-.hero-area .content-wrapper {
-
+.hero-area h1 {
+  margin: 0 0 250px 0;
 }
 
 /* Aside */
@@ -422,6 +422,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .mission-content {
@@ -449,6 +450,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-section address {
@@ -473,6 +475,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -640,6 +643,12 @@ input[type=button] {
 
   /* ---------- Tablet Homepage Styles ---------- */
 
+  .hero-area h1 {
+    font-size: 3em;
+    width: 88%;
+    margin-bottom: 350px;
+  }
+
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -660,11 +669,16 @@ input[type=button] {
     flex-basis: 34%;
   }
 
+  .reviews h2 {
+    width: 88%;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-flow: row wrap;
+    margin-bottom: 25px;
   }
 
   .reviews-img,
@@ -723,6 +737,7 @@ input[type=button] {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 25px;
     }
 
     .contact-section .general-into,
@@ -744,6 +759,11 @@ input[type=button] {
     }
 
 /* ---------- Desktop Homepage Styles ---------- */
+
+  .hero-area h1 {
+    font-size: 3.75em;
+    margin-bottom: 350px;
+  }
 
     .features article {
       flex-basis: 26%;
