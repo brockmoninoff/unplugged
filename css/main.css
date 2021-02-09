@@ -353,8 +353,9 @@ aside {
   flex-flow: row wrap;
 }
 
-.fontawesome-icon {
-  padding-bottom: 38px;
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features-items-description {
@@ -741,7 +742,7 @@ input[type=button] {
   .map figure {
     padding-bottom: 38%;
   }
-  
+
   .contact-section .general-info,
   .contact-section .chat {
     width: 46%;
