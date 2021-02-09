@@ -202,10 +202,6 @@ header a {
   text-transform: uppercase;
 }
 
-/* header a.unplugged-logo {
-  width: 60%;
-} */
-
 header img {
   width: 100%;
 }
@@ -633,14 +629,22 @@ input[type=button] {
     display: none;
   }
 
-  /* header a.unplugged-logo {
-    width: 33%;
-  } */
-
   header nav {
     width: 33%;
+    justify-content: flex-end;
   }
 
+  header .unplugged-logo a {
+    justify-content: flex-start;
+  }
+
+  header nav ul {
+    justify-content: flex-end;
+  }
+
+  header nav a {
+    padding-left: 4em;
+  }
   /* ---------- Tablet Homepage Styles ---------- */
 
   .hero-area h1 {
